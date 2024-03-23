@@ -1,0 +1,991 @@
+openapi: 3.0.3
+info:
+  title: Laravel
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'http://solati-technical-test.test'
+paths:
+  /api/user:
+    get:
+      summary: ''
+      operationId: getApiUser
+      description: ''
+      parameters: []
+      responses:
+        500:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: 'Auth guard [sanctum] is not defined.'
+                  exception: InvalidArgumentException
+                  file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Auth/AuthManager.php
+                  line: 86
+                  trace:
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Auth/AuthManager.php
+                      line: 70
+                      function: resolve
+                      class: Illuminate\Auth\AuthManager
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php
+                      line: 83
+                      function: guard
+                      class: Illuminate\Auth\AuthManager
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php
+                      line: 62
+                      function: authenticate
+                      class: Illuminate\Auth\Middleware\Authenticate
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                      line: 183
+                      function: handle
+                      class: Illuminate\Auth\Middleware\Authenticate
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                      line: 119
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Routing/Router.php
+                      line: 805
+                      function: then
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Routing/Router.php
+                      line: 784
+                      function: runRouteWithinStack
+                      class: Illuminate\Routing\Router
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Routing/Router.php
+                      line: 748
+                      function: runRoute
+                      class: Illuminate\Routing\Router
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Routing/Router.php
+                      line: 737
+                      function: dispatchToRoute
+                      class: Illuminate\Routing\Router
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php
+                      line: 200
+                      function: dispatch
+                      class: Illuminate\Routing\Router
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                      line: 144
+                      function: 'Illuminate\Foundation\Http\{closure}'
+                      class: Illuminate\Foundation\Http\Kernel
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php
+                      line: 21
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php
+                      line: 31
+                      function: handle
+                      class: Illuminate\Foundation\Http\Middleware\TransformsRequest
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                      line: 183
+                      function: handle
+                      class: Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php
+                      line: 21
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php
+                      line: 50
+                      function: handle
+                      class: Illuminate\Foundation\Http\Middleware\TransformsRequest
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                      line: 183
+                      function: handle
+                      class: Illuminate\Foundation\Http\Middleware\TrimStrings
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php
+                      line: 27
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                      line: 183
+                      function: handle
+                      class: Illuminate\Http\Middleware\ValidatePostSize
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php
+                      line: 110
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                      line: 183
+                      function: handle
+                      class: Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php
+                      line: 62
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                      line: 183
+                      function: handle
+                      class: Illuminate\Http\Middleware\HandleCors
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php
+                      line: 57
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                      line: 183
+                      function: handle
+                      class: Illuminate\Http\Middleware\TrustProxies
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                      line: 119
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php
+                      line: 175
+                      function: then
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php
+                      line: 144
+                      function: sendRequestThroughRouter
+                      class: Illuminate\Foundation\Http\Kernel
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
+                      line: 300
+                      function: handle
+                      class: Illuminate\Foundation\Http\Kernel
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
+                      line: 288
+                      function: callLaravelOrLumenRoute
+                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
+                      line: 91
+                      function: makeApiCall
+                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
+                      line: 44
+                      function: makeResponseCall
+                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
+                      line: 35
+                      function: makeResponseCallIfConditionsPass
+                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php
+                      line: 236
+                      function: __invoke
+                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php
+                      line: 163
+                      function: iterateThroughStrategies
+                      class: Knuckles\Scribe\Extracting\Extractor
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php
+                      line: 95
+                      function: fetchResponses
+                      class: Knuckles\Scribe\Extracting\Extractor
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php
+                      line: 125
+                      function: processRoute
+                      class: Knuckles\Scribe\Extracting\Extractor
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php
+                      line: 72
+                      function: extractEndpointsInfoFromLaravelApp
+                      class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php
+                      line: 50
+                      function: extractEndpointsInfoAndWriteToDisk
+                      class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/knuckleswtf/scribe/src/Commands/GenerateDocumentation.php
+                      line: 53
+                      function: get
+                      class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
+                      line: 36
+                      function: handle
+                      class: Knuckles\Scribe\Commands\GenerateDocumentation
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Container/Util.php
+                      line: 41
+                      function: 'Illuminate\Container\{closure}'
+                      class: Illuminate\Container\BoundMethod
+                      type: '::'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
+                      line: 93
+                      function: unwrapIfClosure
+                      class: Illuminate\Container\Util
+                      type: '::'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
+                      line: 35
+                      function: callBoundMethod
+                      class: Illuminate\Container\BoundMethod
+                      type: '::'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Container/Container.php
+                      line: 662
+                      function: call
+                      class: Illuminate\Container\BoundMethod
+                      type: '::'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Console/Command.php
+                      line: 212
+                      function: call
+                      class: Illuminate\Container\Container
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/symfony/console/Command/Command.php
+                      line: 279
+                      function: execute
+                      class: Illuminate\Console\Command
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Console/Command.php
+                      line: 181
+                      function: run
+                      class: Symfony\Component\Console\Command\Command
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/symfony/console/Application.php
+                      line: 1049
+                      function: run
+                      class: Illuminate\Console\Command
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/symfony/console/Application.php
+                      line: 318
+                      function: doRunCommand
+                      class: Symfony\Component\Console\Application
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/symfony/console/Application.php
+                      line: 169
+                      function: doRun
+                      class: Symfony\Component\Console\Application
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php
+                      line: 196
+                      function: run
+                      class: Symfony\Component\Console\Application
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Foundation/Application.php
+                      line: 1183
+                      function: handle
+                      class: Illuminate\Foundation\Console\Kernel
+                      type: '->'
+                    -
+                      file: /Users/johnja/Desktop/Proyects/solati-technical-test/artisan
+                      line: 13
+                      function: handleCommand
+                      class: Illuminate\Foundation\Application
+                      type: '->'
+                properties:
+                  message:
+                    type: string
+                    example: 'Auth guard [sanctum] is not defined.'
+                  exception:
+                    type: string
+                    example: InvalidArgumentException
+                  file:
+                    type: string
+                    example: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Auth/AuthManager.php
+                  line:
+                    type: integer
+                    example: 86
+                  trace:
+                    type: array
+                    example:
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Auth/AuthManager.php
+                        line: 70
+                        function: resolve
+                        class: Illuminate\Auth\AuthManager
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php
+                        line: 83
+                        function: guard
+                        class: Illuminate\Auth\AuthManager
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php
+                        line: 62
+                        function: authenticate
+                        class: Illuminate\Auth\Middleware\Authenticate
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                        line: 183
+                        function: handle
+                        class: Illuminate\Auth\Middleware\Authenticate
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                        line: 119
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Routing/Router.php
+                        line: 805
+                        function: then
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Routing/Router.php
+                        line: 784
+                        function: runRouteWithinStack
+                        class: Illuminate\Routing\Router
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Routing/Router.php
+                        line: 748
+                        function: runRoute
+                        class: Illuminate\Routing\Router
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Routing/Router.php
+                        line: 737
+                        function: dispatchToRoute
+                        class: Illuminate\Routing\Router
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php
+                        line: 200
+                        function: dispatch
+                        class: Illuminate\Routing\Router
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                        line: 144
+                        function: 'Illuminate\Foundation\Http\{closure}'
+                        class: Illuminate\Foundation\Http\Kernel
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php
+                        line: 21
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php
+                        line: 31
+                        function: handle
+                        class: Illuminate\Foundation\Http\Middleware\TransformsRequest
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                        line: 183
+                        function: handle
+                        class: Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php
+                        line: 21
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php
+                        line: 50
+                        function: handle
+                        class: Illuminate\Foundation\Http\Middleware\TransformsRequest
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                        line: 183
+                        function: handle
+                        class: Illuminate\Foundation\Http\Middleware\TrimStrings
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php
+                        line: 27
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                        line: 183
+                        function: handle
+                        class: Illuminate\Http\Middleware\ValidatePostSize
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php
+                        line: 110
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                        line: 183
+                        function: handle
+                        class: Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php
+                        line: 62
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                        line: 183
+                        function: handle
+                        class: Illuminate\Http\Middleware\HandleCors
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php
+                        line: 57
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                        line: 183
+                        function: handle
+                        class: Illuminate\Http\Middleware\TrustProxies
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                        line: 119
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php
+                        line: 175
+                        function: then
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php
+                        line: 144
+                        function: sendRequestThroughRouter
+                        class: Illuminate\Foundation\Http\Kernel
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
+                        line: 300
+                        function: handle
+                        class: Illuminate\Foundation\Http\Kernel
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
+                        line: 288
+                        function: callLaravelOrLumenRoute
+                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
+                        line: 91
+                        function: makeApiCall
+                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
+                        line: 44
+                        function: makeResponseCall
+                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
+                        line: 35
+                        function: makeResponseCallIfConditionsPass
+                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php
+                        line: 236
+                        function: __invoke
+                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php
+                        line: 163
+                        function: iterateThroughStrategies
+                        class: Knuckles\Scribe\Extracting\Extractor
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php
+                        line: 95
+                        function: fetchResponses
+                        class: Knuckles\Scribe\Extracting\Extractor
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php
+                        line: 125
+                        function: processRoute
+                        class: Knuckles\Scribe\Extracting\Extractor
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php
+                        line: 72
+                        function: extractEndpointsInfoFromLaravelApp
+                        class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php
+                        line: 50
+                        function: extractEndpointsInfoAndWriteToDisk
+                        class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/knuckleswtf/scribe/src/Commands/GenerateDocumentation.php
+                        line: 53
+                        function: get
+                        class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
+                        line: 36
+                        function: handle
+                        class: Knuckles\Scribe\Commands\GenerateDocumentation
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Container/Util.php
+                        line: 41
+                        function: 'Illuminate\Container\{closure}'
+                        class: Illuminate\Container\BoundMethod
+                        type: '::'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
+                        line: 93
+                        function: unwrapIfClosure
+                        class: Illuminate\Container\Util
+                        type: '::'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
+                        line: 35
+                        function: callBoundMethod
+                        class: Illuminate\Container\BoundMethod
+                        type: '::'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Container/Container.php
+                        line: 662
+                        function: call
+                        class: Illuminate\Container\BoundMethod
+                        type: '::'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Console/Command.php
+                        line: 212
+                        function: call
+                        class: Illuminate\Container\Container
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/symfony/console/Command/Command.php
+                        line: 279
+                        function: execute
+                        class: Illuminate\Console\Command
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Console/Command.php
+                        line: 181
+                        function: run
+                        class: Symfony\Component\Console\Command\Command
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/symfony/console/Application.php
+                        line: 1049
+                        function: run
+                        class: Illuminate\Console\Command
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/symfony/console/Application.php
+                        line: 318
+                        function: doRunCommand
+                        class: Symfony\Component\Console\Application
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/symfony/console/Application.php
+                        line: 169
+                        function: doRun
+                        class: Symfony\Component\Console\Application
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php
+                        line: 196
+                        function: run
+                        class: Symfony\Component\Console\Application
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Foundation/Application.php
+                        line: 1183
+                        function: handle
+                        class: Illuminate\Foundation\Console\Kernel
+                        type: '->'
+                      -
+                        file: /Users/johnja/Desktop/Proyects/solati-technical-test/artisan
+                        line: 13
+                        function: handleCommand
+                        class: Illuminate\Foundation\Application
+                        type: '->'
+                    items:
+                      type: object
+                      properties:
+                        file:
+                          type: string
+                          example: /Users/johnja/Desktop/Proyects/solati-technical-test/vendor/laravel/framework/src/Illuminate/Auth/AuthManager.php
+                        line:
+                          type: integer
+                          example: 70
+                        function:
+                          type: string
+                          example: resolve
+                        class:
+                          type: string
+                          example: Illuminate\Auth\AuthManager
+                        type:
+                          type: string
+                          example: '->'
+      tags:
+        - Endpoints
+      security: []
+  /api/v1/login:
+    post:
+      summary: ''
+      operationId: postApiV1Login
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: ''
+                  example: debitis
+                password:
+                  type: string
+                  description: ''
+                  example: aut
+              required:
+                - name
+                - password
+      security: []
+  /api/v1/products:
+    get:
+      summary: 'Display a listing of the resource.'
+      operationId: displayAListingOfTheResource
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: 'Store a newly created resource in storage.'
+      operationId: storeANewlyCreatedResourceInStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                category_id:
+                  type: string
+                  description: ''
+                  example: qui
+                description:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: 'Tenetur officia nesciunt sint amet vel.'
+                stock:
+                  type: string
+                  description: ''
+                  example: adipisci
+                price:
+                  type: string
+                  description: ''
+                  example: consequuntur
+              required:
+                - category_id
+                - description
+                - stock
+                - price
+      security: []
+  '/api/v1/products/{id}':
+    get:
+      summary: 'Display the specified resource.'
+      operationId: displayTheSpecifiedResource
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: 'Update the specified resource in storage.'
+      operationId: updateTheSpecifiedResourceInStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                category_id:
+                  type: string
+                  description: ''
+                  example: beatae
+                description:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: 'Quo aut dolor maxime sunt.'
+                stock:
+                  type: string
+                  description: ''
+                  example: cupiditate
+                price:
+                  type: string
+                  description: ''
+                  example: aperiam
+              required:
+                - category_id
+                - description
+                - stock
+                - price
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the product.'
+        example: sint
+        required: true
+        schema:
+          type: string
+  /api/v1/categories:
+    get:
+      summary: 'Display a listing of the resource.'
+      operationId: displayAListingOfTheResource
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: 'Store a newly created resource in storage.'
+      operationId: storeANewlyCreatedResourceInStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: o
+              required:
+                - name
+      security: []
+  '/api/v1/categories/{id}':
+    get:
+      summary: 'Display the specified resource.'
+      operationId: displayTheSpecifiedResource
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: 'Update the specified resource in storage.'
+      operationId: updateTheSpecifiedResourceInStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: embnskvzanyexoxgiiicrzhi
+              required:
+                - name
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the category.'
+        example: at
+        required: true
+        schema:
+          type: string
+  /api/v1/users:
+    get:
+      summary: 'Display a listing of the resource.'
+      operationId: displayAListingOfTheResource
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+tags:
+  -
+    name: Endpoints
+    description: ''
